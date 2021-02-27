@@ -1,4 +1,5 @@
-// import logo from './logo.svg';
+//import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     <div className="App">
       <header className="App-header">
           <h1>First Heading</h1>
+          <Counter></Counter>
           <ul>
             {
              products.map(product =>  <li> {product.name} </li>)
@@ -33,6 +35,16 @@ function App() {
       </header>
     </div>
   );
+}
+
+// Counter
+function Counter(){
+
+  const [ count, setCount] = useState(10);
+
+  return (
+    <h1>Count: {count} </h1>
+  )
 }
 
 // Product
@@ -56,7 +68,7 @@ let Item = (props) =>{
     </div>
   )
 }
-
+ 
 
 // HI defined here
 let Hi = (prop) => {
