@@ -13,3 +13,27 @@
 ## 32-11 Component state hook and set state method
 ## 32-12 Load dynamic data, API call useEffect integrate state
 ## 32-13 Module Summary React Core Concepts
+
+Success! Created my-app at D:\Complete Web Development - Batch 3\mobarak-ali\Milestone07 - Simple React\module32\my-app
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd my-app
+  npm start
+
+Happy hacking!
+

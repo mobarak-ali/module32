@@ -5,9 +5,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>My Frist Paragraph in React App!</p>
-        <p>{1+2+3} = Hello!</p>
-
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -21,8 +18,6 @@ function App() {
           Learn React
         </a>
       </header>
-
-      
     </div>
   );
 }
