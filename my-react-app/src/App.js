@@ -40,14 +40,18 @@ function App() {
 // Counter
 function Counter(){
 
-  const [ count, setCount] = useState(10);
+  const [ count, setCount] = useState(0);
 
   return (
-    <h1>Count: {count} </h1>
-  )
+    <div>
+      <h1>Count: {count} </h1>
+      <button onClick = {() =>setCount(count + 1)}>Increase</button>
+      <button onClick = {() =>(count>=1)?setCount(count - 1):setCount(0)}>Decrease</button>
+    </div>
+    )
 }
 
-// Product
+// Product 
 
 let Item = (props) =>{
 
