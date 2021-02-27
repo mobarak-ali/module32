@@ -14,16 +14,22 @@ function App() {
     { name : 'Illustrator', price : "$45" },
     { name : 'Flash',       price : "$5" },
   ]
-
+ 
   return (
     <div className="App">
       <header className="App-header">
           <h1>First Heading</h1>
+          <ul>
+            {
+             products.map(product =>  <li> {product.name} </li>)
+            }
+          </ul>
           <p>Hi, my name is {name} and I'm {age} years</p>
+          
           <Hi id='55' name="Mobarak Ali"></Hi>
-          <Item product = {products[0]} ></Item>
-          <Item product = {products[1]} ></Item>
-          <Item product = {products[2]} ></Item>
+          {
+            products.map(val=> <Item product = {val} ></Item> )
+          }
       </header>
     </div>
   );
@@ -37,16 +43,13 @@ let Item = (props) =>{
     margin: '15px',
     padding: '20px',
     backgroundColor: 'limegreen',
-    borderRadius: '5px'
+    borderRadius: '5px',
   }
-  console.log(props);
 
   const {name, price } = props.product;
 
   return (
     <div style = {css}>
-      {/* <h3>{props.product.name}</h3>
-      <h2>{props.product.price}</h2> */}
       <h3>{name}</h3>
       <h2>{price}</h2>
       <button>Buy Now</button>
